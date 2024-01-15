@@ -1,8 +1,14 @@
 #include <stdio.h>
 
-int main() {
-    // Displaying "Hello, World!" on the screen
-    printf("Hello, World!\n");
 
-    return 0;
+int main(){
+	int naisse,age;
+	
+	printf("quelle est votre anne de naissance ? \n");
+	scanf("%d",&naisse);
+	
+	age = 2024 - naisse;
+	
+	printf("Vous aurez alors %d ans cette anne ! ",age);
+	
 }
