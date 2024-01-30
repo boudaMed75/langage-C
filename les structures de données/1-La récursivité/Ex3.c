@@ -1,10 +1,13 @@
-
 #include<stdio.h>
 
-int fibancci(int n){
+int affiche(int n){
 	
-	if(n <= 1) return 1;
-	return fibancci(n-1) + fibancci(n-2);
+	if(n < 0) return ;
+	affiche(n-1);
+	
+	for(int b=0 ; b<=9 ; b++){
+		printf("%d\t",n*10+b);
+	}
 }
 
 int main(){
@@ -12,7 +15,6 @@ int main(){
 	printf("Entrer un entier n : ");
 	printf("%d",&n);
 	
-	printf("Le fibonacci de %d est : %d ",n,fibancci(n));
-	
+	affiche(n);
 	
 }
